@@ -9,10 +9,13 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Button from "@mui/material/Button";
-import Pagination from "@mui/material/Pagination";
-import Stack from "@mui/material/Stack";
+import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutline';
 import Grid from "@mui/material/Grid";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
+import DeleteIcon from '@mui/icons-material/Delete';
+import ControlPointIcon from '@mui/icons-material/ControlPoint';
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 import { Link } from "react-router-dom";
 
 const SalesOpportunity = () => {
@@ -21,129 +24,197 @@ const SalesOpportunity = () => {
       {/*********** body area start here ************/}
       <Card>
         <CardContent>
+          {/* table work start here */}
+          <Paper className="customTable" sx={{ width: "100%" }}>
+            
           {/* header part work start */}
           <Grid className="mb10" container spacing={2}>
             <Grid item xs={8}>
-            <h2 className="m0" style={{ color: "#00c2c1" }}>
-            Sales opportunity
-              </h2>
+            <h2 className="m0" style={{ color: "#00c2c1" }}>Sales Opportunity</h2>
             </Grid>
             <Grid item xs={4} textAlign='right'>
-            <Button variant="contained" size="small" style={{ background: "#00c2c1" }}>
-                Add
-              </Button>
+              <Link className="linkIco" to="/AddSalesOpportunity"> <ControlPointIcon /> Add Sales Opportunity</Link>
             </Grid>
           </Grid>
           {/* header part work end */}
-
-          {/* table work start here */}
-          <Paper className="customTable" sx={{ width: "100%" }}>
-            <TableContainer sx={{ maxHeight: 385 }}>
+          <hr />
+            <TableContainer>
               <Table stickyHeader aria-label="sticky">
                 <TableHead>
-                  <TableRow
-                    sx={{
-                      backgroundColor: "red",
-                      // borderBottom: "2px solid black",
-                      "& th": {
-                        fontSize: "0.875rem",
-                        color: "#00c2c1",
-                      },
-                    }}
-                  >
-                    <TableCell>Booking ID</TableCell>
-                    <TableCell> Customer </TableCell>
-                    <TableCell> USER </TableCell>
-                    <TableCell>Delivery Date</TableCell>
-                    <TableCell> Delivery Time </TableCell>
-                    <TableCell> Number</TableCell>
-                    <TableCell>Address</TableCell>
+                  <TableRow>
+                    <TableCell>Opportunity ID</TableCell>
+                    <TableCell>Lead ID</TableCell>
+                    <TableCell>Name</TableCell>
+                    <TableCell>Last Updated</TableCell>
+                    <TableCell>Activity Count</TableCell>
                     <TableCell>Action</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   <TableRow hover>
                     <TableCell>TCDIGDUR00000001</TableCell>
-                    <TableCell>Rahul</TableCell>
-                    <TableCell>9887XXXX48</TableCell>
-                    <TableCell>5/2/24</TableCell>
-                    <TableCell>16:00</TableCell>
-                    <TableCell>9875478925</TableCell>
-                    <TableCell> Kolkata </TableCell>
+                    <TableCell>XDLCV123456UIDY</TableCell>
+                    <TableCell>Arjun Singh</TableCell>
+                    <TableCell>13 Feb 2024</TableCell>
+                    <TableCell>09</TableCell>
                     <TableCell>
-                      <Link
-                        className="customBtnOutline"
-                        variant="outlined"
-                        size="small"
-                        to="/openbookingdetails"
-                      >
-                        <RemoveRedEyeOutlinedIcon /> View
+                      <Link variant="outlined" size="small" to="/ViewSalesOpportunity">
+                        <RemoveRedEyeOutlinedIcon color="success" />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/AddSalesOpportunity">
+                        <DriveFileRenameOutlineIcon />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/">
+                        <DeleteIcon color="error" />
                       </Link>
                     </TableCell>
                   </TableRow>
-
                   <TableRow hover>
                     <TableCell>TCDIGDUR00000001</TableCell>
-                    <TableCell>Rahul</TableCell>
-                    <TableCell>9887XXXX48</TableCell>
-                    <TableCell>5/2/24</TableCell>
-                    <TableCell>16:00</TableCell>
-                    <TableCell>9875478925</TableCell>
-                    <TableCell> Kolkata </TableCell>
+                    <TableCell>XDLCV123456UIDY</TableCell>
+                    <TableCell>Arjun Singh</TableCell>
+                    <TableCell>13 Feb 2024</TableCell>
+                    <TableCell>09</TableCell>
                     <TableCell>
-                      <Link
-                        className="customBtnOutline"
-                        variant="outlined"
-                        size="small"
-                        to="/openbookingdetails"
-                      >
-                        <RemoveRedEyeOutlinedIcon /> View
+                      <Link variant="outlined" size="small" to="/ViewSalesOpportunity">
+                        <RemoveRedEyeOutlinedIcon color="success" />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/AddSalesOpportunity">
+                        <DriveFileRenameOutlineIcon />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/">
+                        <DeleteIcon color="error" />
                       </Link>
                     </TableCell>
                   </TableRow>
-
                   <TableRow hover>
                     <TableCell>TCDIGDUR00000001</TableCell>
-                    <TableCell>Rahul</TableCell>
-                    <TableCell>9887XXXX48</TableCell>
-                    <TableCell>5/2/24</TableCell>
-                    <TableCell>16:00</TableCell>
-                    <TableCell>9875478925</TableCell>
-                    <TableCell> Kolkata </TableCell>
+                    <TableCell>XDLCV123456UIDY</TableCell>
+                    <TableCell>Arjun Singh</TableCell>
+                    <TableCell>13 Feb 2024</TableCell>
+                    <TableCell>09</TableCell>
                     <TableCell>
-                      <Link
-                        className="customBtnOutline"
-                        variant="outlined"
-                        size="small"
-                        to="/openbookingdetails"
-                      >
-                        <RemoveRedEyeOutlinedIcon /> View
+                      <Link variant="outlined" size="small" to="/ViewSalesOpportunity">
+                        <RemoveRedEyeOutlinedIcon color="success" />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/AddSalesOpportunity">
+                        <DriveFileRenameOutlineIcon />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/">
+                        <DeleteIcon color="error" />
                       </Link>
                     </TableCell>
                   </TableRow>
-
                   <TableRow hover>
                     <TableCell>TCDIGDUR00000001</TableCell>
-                    <TableCell>Rahul</TableCell>
-                    <TableCell>9887XXXX48</TableCell>
-                    <TableCell>5/2/24</TableCell>
-                    <TableCell>16:00</TableCell>
-                    <TableCell>9875478925</TableCell>
-                    <TableCell> Kolkata </TableCell>
+                    <TableCell>XDLCV123456UIDY</TableCell>
+                    <TableCell>Arjun Singh</TableCell>
+                    <TableCell>13 Feb 2024</TableCell>
+                    <TableCell>09</TableCell>
                     <TableCell>
-                      <Link
-                        className="customBtnOutline"
-                        variant="outlined"
-                        size="small"
-                        to="/openbookingdetails"
-                      >
-                        <RemoveRedEyeOutlinedIcon /> View
+                      <Link variant="outlined" size="small" to="/ViewSalesOpportunity">
+                        <RemoveRedEyeOutlinedIcon color="success" />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/AddSalesOpportunity">
+                        <DriveFileRenameOutlineIcon />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/">
+                        <DeleteIcon color="error" />
+                      </Link>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow hover>
+                    <TableCell>TCDIGDUR00000001</TableCell>
+                    <TableCell>XDLCV123456UIDY</TableCell>
+                    <TableCell>Arjun Singh</TableCell>
+                    <TableCell>13 Feb 2024</TableCell>
+                    <TableCell>09</TableCell>
+                    <TableCell>
+                      <Link variant="outlined" size="small" to="/ViewSalesOpportunity">
+                        <RemoveRedEyeOutlinedIcon color="success" />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/AddSalesOpportunity">
+                        <DriveFileRenameOutlineIcon />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/">
+                        <DeleteIcon color="error" />
+                      </Link>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow hover>
+                    <TableCell>TCDIGDUR00000001</TableCell>
+                    <TableCell>XDLCV123456UIDY</TableCell>
+                    <TableCell>Arjun Singh</TableCell>
+                    <TableCell>13 Feb 2024</TableCell>
+                    <TableCell>09</TableCell>
+                    <TableCell>
+                      <Link variant="outlined" size="small" to="/ViewSalesOpportunity">
+                        <RemoveRedEyeOutlinedIcon color="success" />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/AddSalesOpportunity">
+                        <DriveFileRenameOutlineIcon />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/">
+                        <DeleteIcon color="error" />
+                      </Link>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow hover>
+                    <TableCell>TCDIGDUR00000001</TableCell>
+                    <TableCell>XDLCV123456UIDY</TableCell>
+                    <TableCell>Arjun Singh</TableCell>
+                    <TableCell>13 Feb 2024</TableCell>
+                    <TableCell>09</TableCell>
+                    <TableCell>
+                      <Link variant="outlined" size="small" to="/ViewSalesOpportunity">
+                        <RemoveRedEyeOutlinedIcon color="success" />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/AddSalesOpportunity">
+                        <DriveFileRenameOutlineIcon />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/">
+                        <DeleteIcon color="error" />
+                      </Link>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow hover>
+                    <TableCell>TCDIGDUR00000001</TableCell>
+                    <TableCell>XDLCV123456UIDY</TableCell>
+                    <TableCell>Arjun Singh</TableCell>
+                    <TableCell>13 Feb 2024</TableCell>
+                    <TableCell>09</TableCell>
+                    <TableCell>
+                      <Link variant="outlined" size="small" to="/ViewSalesOpportunity">
+                        <RemoveRedEyeOutlinedIcon color="success" />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/AddSalesOpportunity">
+                        <DriveFileRenameOutlineIcon />
+                      </Link>
+                      &nbsp;&nbsp;
+                      <Link variant="outlined" size="small" to="/">
+                        <DeleteIcon color="error" />
                       </Link>
                     </TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
             </TableContainer>
+            
             <Stack className="rightPagination mt10" spacing={2}>
               <Pagination color="primary" count={10} shape="rounded" />
             </Stack>

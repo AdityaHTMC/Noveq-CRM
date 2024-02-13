@@ -23,8 +23,14 @@ import DealerLedger from './booking/SalesReport.jsx';
 
 import SalesQuotation from './booking/SalesQuotation.jsx';
 import Ledger from './booking/Ledger.jsx';
+import AddLead from './booking/AddLead.jsx';
+import ViewLead from './booking/ViewLead.jsx';
 import SalesOpportunity from './booking/SalesOpportunity.jsx';
 import SalesReport from './booking/SalesReport.jsx';
+import AddSalesOpportunity from './booking/AddSalesOpportunity.jsx';
+import ViewSalesOpportunity from './booking/ViewSalesOpportunity.jsx';
+import AddActivityWindow from './booking/AddActivityWindow.jsx';
+import ViewActivityWindow from './booking/ViewActivityWindow.jsx';
 
 
 const DrawerHeader = styled('div')(({ theme }) => ({
@@ -87,6 +93,12 @@ function App() {
             <Route path='/ledger' element={<Ledger/>} />
             <Route path='/Login' element={<Login />} />
             <Route path='/MyProfile' element={<MyProfile />} />
+            <Route path='/AddLead' element={<AddLead />} />
+            <Route path='/ViewLead' element={<ViewLead />} />
+            <Route path='/AddSalesOpportunity' element={<AddSalesOpportunity />} />
+            <Route path='/ViewSalesOpportunity' element={<ViewSalesOpportunity />} />
+            <Route path='/AddActivityWindow' element={<AddActivityWindow />} />
+            <Route path='/ViewActivityWindow' element={<ViewActivityWindow />} />
           </Routes>
         </Box>
         {/******* body part end *******/}

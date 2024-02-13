@@ -92,6 +92,8 @@
 .iconTitel svg{margin-right:7px;width:30px;height:30px;color:#00c2c1;}
 .css-15gn7r4-MuiTableRow-root td, .css-15gn7r4-MuiTableRow-root th{border-color:#e0e0e0!important;}
 .tabBox{margin-bottom:15px;border:1px solid #e0e0e0;}
+.grayBg{background-color:#f7f7f7;}
+.tableBordered{border:1px solid #e0e0e0;}
 /******* custom common style end here *******/
 
 html,body,main{background:#efefef;}
@@ -109,7 +111,7 @@ html,body,main{background:#efefef;}
 .profileDropItem svg{padding-right:7px;width:28px!important;}
 .profileDropItem:last-child{border-bottom:none!important;}
 .MuiMenu-list a{color:rgba(0, 0, 0, 0.87)!important;}
-
+.sidebarManuUl li:hover .css-cveggr-MuiListItemIcon-root{color:#fff!important;}
 
 /* login page design work start here */
 /* .LoginBx{margin:0 auto;width:50%;padding: 16px;} */

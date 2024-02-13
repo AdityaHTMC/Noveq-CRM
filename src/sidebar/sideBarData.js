@@ -1,47 +1,46 @@
 import React from "react";
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
-import BookOutlinedIcon from '@mui/icons-material/BookOutlined';
-import HomeIcon from '@mui/icons-material/Home';
-import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
-import HandshakeOutlinedIcon from '@mui/icons-material/HandshakeOutlined';
-import TroubleshootOutlinedIcon from '@mui/icons-material/TroubleshootOutlined';
-import StyleIcon from '@mui/icons-material/Style';
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import DvrRoundedIcon from '@mui/icons-material/DvrRounded';
+import FactCheckOutlinedIcon from '@mui/icons-material/FactCheckOutlined';
+import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
+import BrandingWatermarkOutlinedIcon from '@mui/icons-material/BrandingWatermarkOutlined';
+import ReceiptLongOutlinedIcon from '@mui/icons-material/ReceiptLongOutlined';
+import ListAltOutlinedIcon from '@mui/icons-material/ListAltOutlined';
 
 export const SideBarData = [
     {
         title: "Dashboard",
-        icon: <HomeIcon />,
+        icon: <HomeRoundedIcon />,
         key: "/",
     },
     {
         title: "Lead",
-        icon: <CalendarMonthOutlinedIcon />,
+        icon: <DvrRoundedIcon />,
         key: "/lead",
     },
     {
         title: "Sales Opportunity",
-        icon: <CalendarMonthOutlinedIcon />,
+        icon: <FactCheckOutlinedIcon />,
         key: "/slaesOpportunity",
     },
     {
         title: "Activity Window",
-        icon: <HandshakeOutlinedIcon />,
+        icon: <BrandingWatermarkOutlinedIcon />,
         key: "/ActivityWindow",
     },
     {
         title: "Sales Quotation",
-        icon: <TroubleshootOutlinedIcon />,
+        icon: <ReceiptLongOutlinedIcon />,
         key: "/SalesQuotation",
     },
     {
         title: "Sales Report",
-        icon: <StyleIcon />,
+        icon: <ListAltOutlinedIcon />,
         key: "/salesReport",
     },
     {
         title: "Ledger",
-        icon: <StyleIcon />,
+        icon: <AssessmentOutlinedIcon />,
         key: "/ledger",
     },
     
