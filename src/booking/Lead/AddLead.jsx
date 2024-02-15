@@ -3,12 +3,6 @@ import { useForm, useFieldArray } from "react-hook-form";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Paper from "@mui/material/Paper";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
@@ -21,7 +15,13 @@ import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import SendIcon from "@mui/icons-material/Send";
 
 const AddLead = () => {
-  const { register, handleSubmit, control, watch } = useForm();
+  const {
+    register,
+    handleSubmit,
+    control,
+    watch,
+    formState: { errors },
+  } = useForm();
   const { fields, append, remove } = useFieldArray({
     control,
     name: "MycontactPersons",
@@ -63,8 +63,13 @@ const AddLead = () => {
                     size="small"
                     className="width100 mb20"
                     label="Lead Name"
-                    {...register("leadName")}
+                    {...register("leadName", { required: true })}
+                    aria-invalid={errors.leadName ? "true" : "false"}
+                    error={!!errors.leadName} // Set error prop based on presence of errors
                   />
+                  {errors.leadName?.type === "required" && (
+                    <p role="alert">Lead name is required</p>
+                  )}
                 </Grid>
                 <Grid item xs={3}>
                   <FormControl fullWidth>
@@ -170,19 +175,32 @@ const AddLead = () => {
                       size="small"
                       className="width100"
                       label="Contact Person Email ID"
-                      {...register(`MycontactPersons.${index}.email`)}
+                      {...register(`MycontactPersons.${index}.email`, {
+                        pattern: {
+                          value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                          message: "Invalid email format",
+                        },
+                      })}
+                      error={!!errors?.MycontactPersons?.[index]?.email} // Set error prop based on presence of errors
+                      helperText={
+                        errors?.MycontactPersons?.[index]?.email?.message
+                      } // Display error message
                     />
                   </Grid>
                 </Grid>
               </div>
             ))}
-            <Button
-              variant="contained"
-              startIcon={<AddCircleOutlineIcon />}
-              onClick={() => append({})}
-            >
-              Add
-            </Button>
+            <Grid container justifyContent="flex-end">
+              <Grid item>
+                <Button
+                  variant="contained"
+                  startIcon={<AddCircleOutlineIcon />}
+                  onClick={() => append({})}
+                >
+                  Add
+                </Button>
+              </Grid>
+            </Grid>
 
             <Grid container spacing={2}>
               <Grid item xs={6}>

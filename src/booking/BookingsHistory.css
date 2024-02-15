@@ -53,3 +53,8 @@
     font-weight: 400;
     cursor: pointer;
 }
+
+
+.error {
+    border: 1px solid red;
+  }
