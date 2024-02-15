@@ -30,15 +30,15 @@ const login = () => {
                     <TableBody>
                       <TableRow hover sx={{ 'td,th': { border: 1 } }}>
                         <TableCell><b>Email Id.</b></TableCell>
-                        <TableCell>apolloclinic@gmail.com</TableCell>
+                        <TableCell>hello@gmail.com</TableCell>
                       </TableRow>
                       <TableRow hover sx={{ 'td,th': { border: 1 } }}>
-                        <TableCell sx={{ width: 150 }}><b>Clinic Name</b></TableCell>
-                        <TableCell>Apollo Clinic</TableCell>
+                        <TableCell sx={{ width: 150 }}><b>Employee Name</b></TableCell>
+                        <TableCell>Raju Sharma</TableCell>
                       </TableRow>
                       <TableRow hover sx={{ 'td,th': { border: 1 } }}>
-                        <TableCell><b>License No.</b></TableCell>
-                        <TableCell>#1234567890</TableCell>
+                        <TableCell><b>Sales Employee Code</b></TableCell>
+                        <TableCell>#AECLW1234589TX</TableCell>
                       </TableRow>
                       <TableRow hover sx={{ 'td,th': { border: 1 } }}>
                         <TableCell><b>Contact No.</b></TableCell>
