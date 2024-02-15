@@ -17,136 +17,20 @@ import { Link } from "react-router-dom";
 
 const SalesReport = () => {
   return (
-    <>
+    <> 
       {/*********** body area start here ************/}
       <Card>
         <CardContent>
           {/* header part work start */}
-          <Grid className="mb10" container spacing={2}>
-            <Grid item xs={8}>
-            <h2 className="m0" style={{ color: "#00c2c1" }}>
-            Sales Report 
-              </h2>
-            </Grid>
-            <Grid item xs={4} textAlign='right'>
-            <Button variant="contained" size="small" style={{ background: "#00c2c1" }}>
-                Add
-              </Button>
-            </Grid>
-          </Grid>
+          <h2 className="m0" style={{ color: "#00c2c1" }}>Sales Report</h2>
+          <hr />
           {/* header part work end */}
 
           {/* table work start here */}
           <Paper className="customTable" sx={{ width: "100%" }}>
-            <TableContainer sx={{ maxHeight: 385 }}>
-              <Table stickyHeader aria-label="sticky">
-                <TableHead>
-                  <TableRow
-                    sx={{
-                      backgroundColor: "red",
-                      // borderBottom: "2px solid black",
-                      "& th": {
-                        fontSize: "0.875rem",
-                        color: "#00c2c1",
-                      },
-                    }}
-                  >
-                    <TableCell>Booking ID</TableCell>
-                    <TableCell> Customer </TableCell>
-                    <TableCell> USER </TableCell>
-                    <TableCell>Delivery Date</TableCell>
-                    <TableCell> Delivery Time </TableCell>
-                    <TableCell> Number</TableCell>
-                    <TableCell>Address</TableCell>
-                    <TableCell>Action</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  <TableRow hover>
-                    <TableCell>TCDIGDUR00000001</TableCell>
-                    <TableCell>Rahul</TableCell>
-                    <TableCell>9887XXXX48</TableCell>
-                    <TableCell>5/2/24</TableCell>
-                    <TableCell>16:00</TableCell>
-                    <TableCell>9875478925</TableCell>
-                    <TableCell> Kolkata </TableCell>
-                    <TableCell>
-                      <Link
-                        className="customBtnOutline"
-                        variant="outlined"
-                        size="small"
-                        to="/openbookingdetails"
-                      >
-                        <RemoveRedEyeOutlinedIcon /> View
-                      </Link>
-                    </TableCell>
-                  </TableRow>
-
-                  <TableRow hover>
-                    <TableCell>TCDIGDUR00000001</TableCell>
-                    <TableCell>Rahul</TableCell>
-                    <TableCell>9887XXXX48</TableCell>
-                    <TableCell>5/2/24</TableCell>
-                    <TableCell>16:00</TableCell>
-                    <TableCell>9875478925</TableCell>
-                    <TableCell> Kolkata </TableCell>
-                    <TableCell>
-                      <Link
-                        className="customBtnOutline"
-                        variant="outlined"
-                        size="small"
-                        to="/openbookingdetails"
-                      >
-                        <RemoveRedEyeOutlinedIcon /> View
-                      </Link>
-                    </TableCell>
-                  </TableRow>
-
-                  <TableRow hover>
-                    <TableCell>TCDIGDUR00000001</TableCell>
-                    <TableCell>Rahul</TableCell>
-                    <TableCell>9887XXXX48</TableCell>
-                    <TableCell>5/2/24</TableCell>
-                    <TableCell>16:00</TableCell>
-                    <TableCell>9875478925</TableCell>
-                    <TableCell> Kolkata </TableCell>
-                    <TableCell>
-                      <Link
-                        className="customBtnOutline"
-                        variant="outlined"
-                        size="small"
-                        to="/openbookingdetails"
-                      >
-                        <RemoveRedEyeOutlinedIcon /> View
-                      </Link>
-                    </TableCell>
-                  </TableRow>
-
-                  <TableRow hover>
-                    <TableCell>TCDIGDUR00000001</TableCell>
-                    <TableCell>Rahul</TableCell>
-                    <TableCell>9887XXXX48</TableCell>
-                    <TableCell>5/2/24</TableCell>
-                    <TableCell>16:00</TableCell>
-                    <TableCell>9875478925</TableCell>
-                    <TableCell> Kolkata </TableCell>
-                    <TableCell>
-                      <Link
-                        className="customBtnOutline"
-                        variant="outlined"
-                        size="small"
-                        to="/openbookingdetails"
-                      >
-                        <RemoveRedEyeOutlinedIcon /> View
-                      </Link>
-                    </TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
-            </TableContainer>
-            <Stack className="rightPagination mt10" spacing={2}>
-              <Pagination color="primary" count={10} shape="rounded" />
-            </Stack>
+          <br /><br /><br /><br /><br /><br /><br />
+            <h1 align="center">Coming Soon</h1>
+            <br /><br /><br /><br /><br /><br /><br />
           </Paper>
           {/* table work end here */}
         </CardContent>

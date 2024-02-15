@@ -1,20 +1,8 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
+body {margin:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+code {font-family:source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;}
 .css-p55zm9-MuiButtonBase-root-MuiIconButton-root{background:#039d9c!important}
-@media (min-width: 600px) {
+hr{border-top:1px solid #f1f1f1;border-left:none;border-right:none;}
+@media (min-width: 767px) {
     /* .css-2dum1v-MuiDrawer-docked .MuiDrawer-paper{width:calc(48px + 1px)!important;}
     .css-2dum1v-MuiDrawer-docked{width:calc(48px + 1px)!important;} */
 }
@@ -24,11 +12,5 @@ code {
 .sidebarManuBx ul a{border-bottom:1px solid #f3f3f3;display:block;color:rgba(0, 0, 0, 0.87);margin: 4px !important; padding: 4px !important;}
 .sidebarManuBx .sidebarManuUl li {border-bottom:1px solid #f3f3f3;}
 .sidebarManuBx .sidebarManuUl li:last-child{border-radius:0px!important;border-bottom:none; margin: 4px !important; padding: 4px !important;}
-.sidebarManuUl:hover{
-  background: #00c2c1 !important;
-  padding: 6px !important;
-  margin: 6px !important;
-  border-radius: 8px !important;
-  color: #fff !important;
-  font-weight: 900;
-}
+.sidebarManuUl:hover{background:#00c2c1 !important;padding:0px!important;margin:0px!important;border-radius:8px!important;color:#fff!important;font-weight:900;}
+.linkIco svg{margin-bottom:-6px;}

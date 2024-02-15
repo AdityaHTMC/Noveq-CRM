@@ -83,7 +83,7 @@ const SideBar = ({ open, setOpen }) => {
 
         {
           SideBarData.map((val) => (
-            <MenuList className='sidebarManuUl' style={{ margin: "6px", padding: "6px" }}>
+            <MenuList className='sidebarManuUl' style={{ margin: "0px", padding: "0px" }}>
               <MenuItem onClick={({ key }) => {
                 if (val?.key === "logout") {
                   //TODO
