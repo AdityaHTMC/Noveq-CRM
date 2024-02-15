@@ -15,7 +15,7 @@ import DriveFileRenameOutlineOutlinedIcon from '@mui/icons-material/DriveFileRen
 import UserPic from '../images/user.jpg';
 
 
-const login = () => {
+const MyProfile = () => {
   return (
     // page body part start //
     <div>
@@ -71,4 +71,4 @@ const login = () => {
     // page body part end //
   )
 }
-export default login
+export default MyProfile
