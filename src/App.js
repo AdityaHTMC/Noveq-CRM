@@ -11,25 +11,23 @@ import SideBar from './sidebar/SideBar.jsx';
 import { CssBaseline } from '@mui/material';
 import { styled, useTheme } from '@mui/material/styles';
 import MainScreen from './pages/MainScreen.jsx';
-
-import CategoryDetails from './booking/CategoryDetails.jsx';
 import Login from './login/Login.jsx';
 import MyProfile from './my-profile/MyProfile.jsx';
-import Lead from './booking/Lead.jsx';
+import Lead from './booking/Lead/Lead.jsx';
 import SecondarySales from './booking/Ledger.jsx';
-import SalesReturn from './booking/SalesOpportunity.jsx';
-import ActivityWindow from './booking/ActivityWindow.jsx';
+import SalesReturn from './booking/SalesOpportunity/SalesOpportunity.jsx';
+import ActivityWindow from './booking/ActivityWindow/ActivityWindow.jsx';
 import DealerLedger from './booking/SalesReport.jsx';
 
 import SalesQuotation from './booking/SalesQuotation.jsx';
 import Ledger from './booking/Ledger.jsx';
-import AddLead from './booking/AddLead.jsx';
+import AddLead from './booking/Lead/AddLead.jsx';
 import ViewLead from './booking/ViewLead.jsx';
-import SalesOpportunity from './booking/SalesOpportunity.jsx';
+import SalesOpportunity from './booking/SalesOpportunity/SalesOpportunity.jsx';
 import SalesReport from './booking/SalesReport.jsx';
-import AddSalesOpportunity from './booking/AddSalesOpportunity.jsx';
+import AddSalesOpportunity from './booking/SalesOpportunity/AddSalesOpportunity.jsx';
 import ViewSalesOpportunity from './booking/ViewSalesOpportunity.jsx';
-import AddActivityWindow from './booking/AddActivityWindow.jsx';
+import AddActivityWindow from './booking/ActivityWindow/AddActivityWindow.jsx';
 import ViewActivityWindow from './booking/ViewActivityWindow.jsx';
 
 
@@ -86,7 +84,6 @@ function App() {
             <Route path='/lead' element={<Lead/>} />
             <Route path='/slaesOpportunity' element={<SalesOpportunity />} />
             <Route path='/secondarySales' element={<Ledger />} />
-            <Route path='/categoryDetails' element={<CategoryDetails />} />
             <Route path='/ActivityWindow' element={<ActivityWindow />} />
             <Route path='/salesReport' element={<SalesReport/>} />
             <Route path='/SalesQuotation' element={<SalesQuotation/>} />

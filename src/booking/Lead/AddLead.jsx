@@ -22,7 +22,7 @@ import SendIcon from '@mui/icons-material/Send';
 import { Link } from "react-router-dom";
 import { colors } from "@mui/material";
 
-const Lead = () => {
+const AddLead = () => {
     return (
         <>
             {/*********** body area start here ************/}
@@ -202,4 +202,4 @@ const Lead = () => {
     );
 };
 
-export default Lead;
+export default AddLead;

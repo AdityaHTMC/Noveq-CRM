@@ -20,8 +20,8 @@ const MainScreen = () => {
             <div className='cardName'>
               <div className='cardDetail'>
                 <div>
-                  <p className='text-title'> Sales Order</p>
-                  <p className='sub-text-title'>1,233</p>
+                  <p className='text-title'> Lead</p>
+                  <p className='sub-text-title'>125</p>
                 </div>
                 <div className='open-booking'>
                   <InfoIcon />
@@ -40,8 +40,8 @@ const MainScreen = () => {
             <div className='cardName'>
               <div className='cardDetail'>
                 <div>
-                  <p className='text-title'> Secondary Sales</p>
-                  <p className='sub-text-title'>1,233</p>
+                  <p className='text-title'>Sales Opportunity</p>
+                  <p className='sub-text-title'>45</p>
                 </div>
                 <div className='manageHistory'>
                   <ManageHistoryIcon />
@@ -55,8 +55,8 @@ const MainScreen = () => {
             <div className='cardName'>
               <div className='cardDetail'>
                 <div>
-                  <p className='text-title'> Sale Return</p>
-                  <p className='sub-text-title'>1,233</p>
+                  <p className='text-title'> Activity Window</p>
+                  <p className='sub-text-title'>20</p>
                 </div>
                 <div className='partner-icon'>
                   <GroupsIcon />

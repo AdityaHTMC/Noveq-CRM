@@ -20,7 +20,8 @@ import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import SendIcon from '@mui/icons-material/Send';
 import { Link } from "react-router-dom";
 import { colors } from "@mui/material";
-const Lead = () => {
+
+const AddSalesOpportunity = () => {
     return (
         <>
             {/*********** body area start here ************/}
@@ -182,4 +183,4 @@ const Lead = () => {
     );
 };
 
-export default Lead;
+export default AddSalesOpportunity;

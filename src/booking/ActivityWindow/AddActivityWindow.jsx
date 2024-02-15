@@ -21,7 +21,7 @@ import SendIcon from '@mui/icons-material/Send';
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import { Link } from "react-router-dom";
 
-const SalesReport = () => {
+const AddActivityWindow = () => {
     return (
         <>
             {/*********** body area start here ************/}
@@ -107,4 +107,4 @@ const SalesReport = () => {
     );
 };
 
-export default SalesReport;
+export default AddActivityWindow;
